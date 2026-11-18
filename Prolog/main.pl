@@ -2,7 +2,7 @@
 
 :- consult(cargar).
 :- consult(evaluacion).
-:- consult(politica_datos)
+:- consult(politica_datos).
 :- consult(exportar).
 
 :- initialization(main, main).
