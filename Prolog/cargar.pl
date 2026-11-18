@@ -1,4 +1,5 @@
-:- use_module(library(http/jason)).
+:- encoding(utf8).
+:- use_module(library(http/json)).
 
 cargar_combinaciones(Ruta, Combinaciones) :-
     setup_call_cleanup(
@@ -8,7 +9,7 @@ cargar_combinaciones(Ruta, Combinaciones) :-
     maplist(json_a_combinacion, Doc.combinaciones, Combinaciones).
 
 json_a_combinacion(Objeto, Combinacion) :-
-    maplist(json_a_curso, Objeto.Cursos, Combinacion).
+    maplist(json_a_curso, Objeto.cursos, Combinacion).
 
 json_a_curso(Objeto, curso(Codigo, Grupo, Creditos, Carrera, Area)) :-
     Codigo   = Objeto.codigo,

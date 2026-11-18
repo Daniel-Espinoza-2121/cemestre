@@ -1,3 +1,4 @@
+:- encoding(utf8).
 :- ensure_loaded(politica).
 
 %  veredicto(+Combinaciones, ?Id, ?Combinacion, ?Cumple, ?Razon)

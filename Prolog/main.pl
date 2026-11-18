@@ -1,8 +1,8 @@
 :- encoding(utf8).
 
 :- consult(cargar).
-:- consult(politica).
 :- consult(evaluacion).
+:- consult(politica_datos)
 :- consult(exportar).
 
 :- initialization(main, main).
